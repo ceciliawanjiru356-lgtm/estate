@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Properties | Estate Agency{% endblock %}
+
+{% block content %}
+
+<section class="page-banner text-center text-white">
+  <div class="container">
+    <h1>Our Properties</h1>
+    <p>Browse homes, apartments and land for sale or rent.</p>
+  </div>
+</section>
+
+<section class="properties py-5">
+  <div class="container">
+
+    <!-- Filter bar (visual only) -->
+    <form class="filter-bar mb-5" action="#" method="get">
+      <div class="row g-3">
+        <div class="col-lg-4 col-md-6">
+          <input type="text" class="form-control" placeholder="Location or keyword">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <select class="form-select">
+            <option>All types</option>
+            <option>House</option>
+            <option>Apartment</option>
+          </select>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <select class="form-select">
+            <option>For sale or rent</option>
+            <option>For Sale</option>
+            <option>For Rent</option>
+          </select>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <button type="submit" class="btn btn-send w-100"><i class="bi bi-search"></i> Search</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Property grid -->
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="property-card h-100">
+          <div class="img-wrap">
+            <img src="{% static 'img\properties\property-1.jpg' %}" alt="3 Bedroom Maisonette">
+            <span class="badge-tag">For Sale</span>
+          </div>
+          <div class="p-3">
+            <h5>3 Bedroom Maisonette</h5>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Ongata Rongai</p>
+            <div class="d-flex justify-content-between small">
+              <span><i class="bi bi-door-open"></i> 3 Beds</span>
+              <span><i class="bi bi-droplet"></i> 2 Baths</span>
+              <span><i class="bi bi-rulers"></i> 150 m²</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h5 class="price m-0">KES 12,500,000</h5>
+              <a href="#" class="view-link">View <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="property-card h-100">
+          <div class="img-wrap">
+            <img src="{% static 'img\properties\property-2.jpg' %}" alt="2 Bedroom Apartment">
+            <span class="badge-tag rent">For Rent</span>
+          </div>
+          <div class="p-3">
+            <h5>2 Bedroom Apartment</h5>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Ongata Rongai</p>
+            <div class="d-flex justify-content-between small">
+              <span><i class="bi bi-door-open"></i> 2 Beds</span>
+              <span><i class="bi bi-droplet"></i> 1 Bath</span>
+              <span><i class="bi bi-rulers"></i> 90 m²</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h5 class="price m-0">KES 45,000 <small>/ month</small></h5>
+              <a href="#" class="view-link">View <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="property-card h-100">
+          <div class="img-wrap">
+            <img src="{% static 'img\properties\property-3.jpg' %}" alt="Residential Plot">
+            <span class="badge-tag land"></span>
+          </div>
+          <div class="p-3">
+            <h5>5 bedroom apartment</h5>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Kitengela</p>
+            <div class="d-flex justify-content-between small">
+              <span><i class="bi bi-rulers"></i> </span>
+              <span><i class="bi bi-file-earmark-text"></i></span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h5 class="price m-0">KES 2,800,000</h5>
+              <a href="#" class="view-link">View <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="property-card h-100">
+          <div class="img-wrap">
+            <img src="{% static 'img\properties\property-4.jpg' %}" alt="4 Bedroom Bungalow">
+            <span class="badge-tag">For Sale</span>
+          </div>
+          <div class="p-3">
+            <h5>4 Bedroom Bungalow</h5>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Karen, Nairobi</p>
+            <div class="d-flex justify-content-between small">
+              <span><i class="bi bi-door-open"></i> 4 Beds</span>
+              <span><i class="bi bi-droplet"></i> 3 Baths</span>
+              <span><i class="bi bi-rulers"></i> 220 m²</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h5 class="price m-0">KES 28,000,000</h5>
+              <a href="#" class="view-link">View <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="property-card h-100">
+          <div class="img-wrap">
+            <img src="{% static 'img\properties\property-5.jpg' %}" alt="Modern Bedsitter">
+            <span class="badge-tag rent">For Rent</span>
+          </div>
+          <div class="p-3">
+            <h5>Modern Bedsitter</h5>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Ngong Road</p>
+            <div class="d-flex justify-content-between small">
+              <span><i class="bi bi-door-open"></i> 1 Room</span>
+              <span><i class="bi bi-droplet"></i> 1 Bath</span>
+              <span><i class="bi bi-rulers"></i> 35 m²</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <h5 class="price m-0">KES 15,000 <small>/ month</small></h5>
+              <a href="#" class="view-link">View <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta text-center text-white py-5">
+  <div class="container">
+    <h3>Can't find what you're looking for?</h3>
+    <p>Tell us what you need and our agents will find it for you.</p>
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg mt-2">Contact an agent</a>
+  </div>
+</section>
+
+{% endblock %}

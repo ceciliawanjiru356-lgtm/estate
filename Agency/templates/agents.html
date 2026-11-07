@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Our Agents{% endblock %}
+{% load static %}
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <h1>Welcome to EstateAgency</h1>
+      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{% static 'img/agents-1.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Your trusted partner in real estate</h3>
+            <p class="fst-italic">
+              We help you buy, sell, and rent property with honest advice and a personal touch. Let us guide you home.
+            <ul>
+              <li><i class="bi bi-check-circle"></i> We provide expert guidance throughout the buying, selling, or renting process.</li>
+              <li><i class="bi bi-check-circle"></i> We have a team of experienced agents who know the local market inside and out.</li>
+              <li><i class="bi bi-check-circle"></i> We are committed to providing exceptional service and ensuring our clients are satisfied.</li>
+            </ul>
+            <p>
+               Whether you're buying your first home, renting, or investing in land, our team is with you at every step.
+  We keep the process simple and transparent, so you can focus on finding the right place.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    {% endblock %}
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts"

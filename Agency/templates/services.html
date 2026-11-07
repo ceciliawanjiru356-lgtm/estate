@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Services | Estate Agency{% endblock %}
+
+{% block content %}
+
+<!-- Banner -->
+<section class="page-banner text-center text-white">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>Everything you need to buy, sell, rent or invest with confidence.</p>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="py-5">
+  <div class="container text-center">
+    <span class="section-tag">What we do</span>
+    <h2 class="mb-3">Property services built around you</h2>
+    <p class="text-muted mx-auto" style="max-width: 650px;">
+      From your first viewing to the day you get the keys, our local agents handle the details
+      so you can focus on the exciting part.
+    </p>
+  </div>
+</section>
+
+<!-- Service cards -->
+<section class="services pb-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-house-heart"></i></div>
+          <h5>Property Sales</h5>
+          <p>Find your dream home or sell yours at the right price with verified listings and honest advice.</p>
+          <a href="{% url 'properties' %}" class="view-link">Browse properties <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-key"></i></div>
+          <h5>Rentals and Leasing</h5>
+          <p>From bedsitters to family homes, we match tenants and landlords quickly and fairly.</p>
+          <a href="{% url 'properties' %}" class="view-link">See rentals <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>Property Valuation</h5>
+          <p>Know what your property is really worth, based on location, condition and market demand.</p>
+          <a href="{% url 'contact' %}" class="view-link">Request a valuation <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-building-gear"></i></div>
+          <h5>Property Management</h5>
+          <p>We handle rent collection, repairs and tenant relations, so your investment looks after itself.</p>
+          <a href="{% url 'contact' %}" class="view-link">Ask about management <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-map"></i></div>
+          <h5>Land and Plots</h5>
+          <p>Browse plots with ready title deeds, and get help with searches and ownership checks.</p>
+          <a href="{% url 'properties' %}" class="view-link">View land <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card h-100">
+          <div class="icon-circle"><i class="bi bi-file-earmark-check"></i></div>
+          <h5>Legal and Paperwork</h5>
+          <p>Support with agreements, title checks and transfers, from the offer to the final handover.</p>
+          <a href="{% url 'contact' %}" class="view-link">Get help <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="process py-5">
+  <div class="container text-center">
+    <span class="section-tag">How it works</span>
+    <h2 class="mb-5">Four simple steps</h2>
+
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h5>Tell us what you need</h5>
+          <p>Share your budget, location and wishlist.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="step">
+          <div class="step-num">2</div>
+          <h5>Get matched</h5>
+          <p>We shortlist properties that fit you.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="step">
+          <div class="step-num">3</div>
+          <h5>Visit and decide</h5>
+          <p>Free viewings with an agent by your side.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="step">
+          <div class="step-num">4</div>
+          <h5>Close the deal</h5>
+          <p>We handle the paperwork until handover.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5">
+  <div class="container" style="max-width: 800px;">
+    <div class="text-center mb-4">
+      <span class="section-tag">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+
+    <details class="faq-item">
+      <summary>Do I pay for viewings?</summary>
+      <p>No. Property viewings with our agents are free.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>How long does a valuation take?</summary>
+      <p>Usually a few days, after we have visited and assessed the property.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you help with title deed checks?</summary>
+      <p>Yes. We help you verify ownership and guide you through the transfer process.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can you manage my rental property?</summary>
+      <p>Yes. We collect rent, handle repairs and deal with tenants on your behalf.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="cta text-center text-white py-5">
+  <div class="container">
+    <h3>Ready to get started?</h3>
+    <p>Talk to one of our agents today.</p>
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg mt-2">Contact us</a>
+  </div>
+</section>
+
+{% endblock %}

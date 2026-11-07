@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Us | Estate Agency{% endblock %}
+{% load static %}
+
+{% block content %}
+
+<!-- Page banner -->
+<section class="page-banner text-center text-white">
+  <div class="container">
+    <h1>About Us</h1>
+    <p>Helping families find homes they love.</p>
+  </div>
+</section>
+
+<!-- Our story -->
+<section class="about-story py-5">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+
+      <div class="col-lg-6">
+        <div class="about-img">
+          <img src="{%static 'img\about-company-1.jpg' %}" alt="Our team at EstateAgency">
+          <div class="about-badge">
+            <strong>10+</strong>
+            <span>Years of experience</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <span class="section-tag">Our story</span>
+        <h2 class="mb-3">Your trusted partner in real estate</h2>
+        <p class="fst-italic text-muted">
+          We help you buy, sell, and rent property with honest advice and a personal touch.
+        </p>
+        <p>
+          EstateAgency was started with a simple idea: finding a home should feel exciting, not stressful.
+          Our local agents know the neighbourhoods, the prices and the paperwork, so you always know
+          what to expect.
+        </p>
+        <ul class="about-list">
+          <li><i class="bi bi-check-circle"></i> Verified listings with transparent pricing.</li>
+          <li><i class="bi bi-check-circle"></i> Free viewings with experienced local agents.</li>
+          <li><i class="bi bi-check-circle"></i> Support with valuations, title checks and handover.</li>
+        </ul>
+        <a href="{% url 'contact' %}" class="btn btn-send">Talk to an agent</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Mission, vision, values -->
+<section class="about-values py-5">
+  <div class="container text-center">
+    <span class="section-tag">What drives us</span>
+    <h2 class="mb-5">Our mission, vision and values</h2>
+
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="value-card">
+          <div class="icon-circle"><i class="bi bi-bullseye"></i></div>
+          <h5>Our Mission</h5>
+          <p>To make buying, selling and renting property simple, honest and stress-free.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card">
+          <div class="icon-circle"><i class="bi bi-eye"></i></div>
+          <h5>Our Vision</h5>
+          <p>To be the most trusted real estate agency in the communities we serve.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card">
+          <div class="icon-circle"><i class="bi bi-heart"></i></div>
+          <h5>Our Values</h5>
+          <p>Integrity, transparency and care for every client, from first call to final handover.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why choose us -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-tag">Why choose us</span>
+      <h2>What makes us different</h2>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="why-item"><i class="bi bi-shield-check"></i><h5>Verified listings</h5><p>Every property is checked before it goes online.</p></div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="why-item"><i class="bi bi-geo-alt"></i><h5>Local expertise</h5><p>We know the areas, prices and what to look out for.</p></div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="why-item"><i class="bi bi-chat-heart"></i><h5>Honest advice</h5><p>No pressure and no hidden costs, just clear guidance.</p></div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="why-item"><i class="bi bi-people"></i><h5>Personal service</h5><p>One agent who stays with you to the very end.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="cta text-center text-white py-5">
+  <div class="container">
+    <h3>Ready to find your dream home?</h3>
+    <p>Get in touch today and let's start your property journey.</p>
+    <a href="{% url 'contact' %}" class="btn btn-light btn-lg mt-2">Contact us</a>
+  </div>
+</section>
+
+{% endblock %}
